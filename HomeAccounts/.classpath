@@ -12,7 +12,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
@@ -22,5 +22,12 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/yagoe/.p2/pool/plugins/org.eclipse.core.databinding_1.6.100.v20170515-1119.jar" sourcepath="C:/Users/yagoe/.p2/pool/plugins/org.eclipse.core.databinding_1.6.100.v20170515-1119.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yagoe/.p2/pool/plugins/org.eclipse.core.databinding.beans_1.4.0.v20170210-0856.jar" sourcepath="C:/Users/yagoe/.p2/pool/plugins/org.eclipse.core.databinding.beans_1.4.0.v20170210-0856.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yagoe/.p2/pool/plugins/org.eclipse.core.databinding.observable_1.6.100.v20170515-1119.jar" sourcepath="C:/Users/yagoe/.p2/pool/plugins/org.eclipse.core.databinding.observable_1.6.100.v20170515-1119.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yagoe/.p2/pool/plugins/org.eclipse.core.databinding.property_1.6.100.v20170515-1119.jar" sourcepath="C:/Users/yagoe/.p2/pool/plugins/org.eclipse.core.databinding.property_1.6.100.v20170515-1119.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yagoe/.p2/pool/plugins/org.eclipse.jface.databinding_1.8.100.v20170503-1507.jar" sourcepath="C:/Users/yagoe/.p2/pool/plugins/org.eclipse.jface.databinding_1.8.100.v20170503-1507.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yagoe/.p2/pool/plugins/org.eclipse.equinox.common_3.9.0.v20170207-1454.jar" sourcepath="C:/Users/yagoe/.p2/pool/plugins/org.eclipse.equinox.common_3.9.0.v20170207-1454.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yagoe/.p2/pool/plugins/com.ibm.icu_58.2.0.v20170418-1837.jar" sourcepath="C:/Users/yagoe/.p2/pool/plugins/com.ibm.icu_58.2.0.v20170418-1837.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
