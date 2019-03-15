@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    	http://www.springframework.org/schema/beans/spring-beans.xsd
+    	http://www.springframework.org/schema/data/jpa 
+    	http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+    	http://www.springframework.org/schema/context 
+    	http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<context:component-scan base-package="com.fonetic.lda.transferenciasinternas"/>
+	<context:annotation-config />
+	<context:property-placeholder location="classpath:app-context-${LDA_ENV:development}.properties"/>
+
+	<bean id="llamadasDataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="${dataBase.driver}"/>
+    	<property name="url" value="${dataBase.jdbcurl}"/>
+    	<property name="username" value="${dataBase.username}"/>
+    	<property name="password" value="${dataBase.password}"/>
+    	<property name="initialSize" value="${dataBase.initialsize}"/>
+    </bean>
+
+	<bean id = "accountJDBCTemplate" class = "org.springframework.jdbc.core.JdbcTemplate">
+      <property name = "dataSource" ref = "llamadasDataSource" />    
+  	</bean>
+  	
+  	<bean id = "accountDataSourceTransactionManager" class = "org.springframework.jdbc.datasource.DataSourceTransactionManager">
+      <property name = "dataSource" ref = "llamadasDataSource" />    
+  	</bean>
+  	
+</beans>
+
+<!-- 
+The customer may integrate the services into any application that has material value independent of the services 
+and use any software provided by Fonetic as part of the services.
+
+The customer will not create a derivative work of the services, use the services to operate or enable any 
+telecommunications service or in connection with any application that allows customer end user to place account or 
+receive account from any public switched telephone network.
+
+Fonetic may discontinue any services or any portion or feature for any reason at any time without liability 
+to customer.
+
+Fonetic will announce if it intends to discontinue or make backwards incompatible changes to the services, 
+Fonetic will use efforts to continue to operate those services without these changes for a least one year after 
+that announcement.
+ -->
